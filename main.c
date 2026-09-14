@@ -16,7 +16,7 @@ double exp_maclaurin(double x, long long N) {
 void run_correctness_tests(long long N_test) {
     double test_x[] = { -5.0, -1.0, -0.5, 0.0, 0.5, 1.0, 2.0, 5.0 };
     int n_tests = sizeof(test_x) / sizeof(test_x[0]);
-    const double eps = 1e-6; // допустимое отклонение для теста
+    const double eps = 1e-6;
 
     printf("--- ПРОВЕРКА ПРАВИЛЬНОСТИ (N = %lld) ---\n", N_test);
     printf("%8s %16s %16s %12s %6s\n", "x", "exp_maclaurin", "math.h exp", "abs_err", "test");
